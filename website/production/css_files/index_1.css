@@ -1,0 +1,399 @@
+/*1. General style (below)*/
+/*Look at comments with the "!!!" in the beginning*/
+body {
+  /*Revrite some browser style */
+  margin: 0 0;
+  border: none;
+  padding: 0 0;
+  width: 100%;
+  /*general background for body*/
+  background-color: #e3e2dd;
+  /*fallback color*/
+  background-image: -webkit-linear-gradient(top, #b3b3b0 0%, #e3e2dd 500px);
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */ }
+
+#wrapper #root {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); }
+
+main {
+  width: 66%; }
+
+aside {
+  width: 34%; }
+
+/*!!! General text and font style*/
+/*!!! Add better fonts and check copyrights for fonts*/
+#root {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #333; }
+
+/*Header style*/
+#header_wrap {
+  background-color: #575757; }
+
+#header_margin {
+  /*Cannot do header margin by "margin" property of the box, so I did by padding*/
+  padding: 15px 0px 0px 0px; }
+
+header {
+  position: relative;
+  /*for absolute positioning of the children*/
+  border-top: 1px solid #444;
+  background-image: -webkit-linear-gradient(top, #646464, #0e0e0e);
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  height: 83px; }
+
+header #imdb_logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 17px 20px; }
+
+/*Style of logo*/
+#imdb_logo a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  /*second background image (below) to remove blinking*/
+  background-image: url("../pics/header/imdb_logo_unhover.png"), url("../pics/header/imdb_logo_hover.png");
+  width: 101px;
+  height: 49px; }
+
+#imdb_logo a:hover {
+  background-image: url("../pics/header/imdb_logo_hover.png");
+  cursor: pointer; }
+
+/*Style of the search_bar and nav_menu*/
+header #search_bar {
+  position: absolute;
+  left: 140px;
+  bottom: 46px; }
+
+header #search_bar input#sch_field,
+header #search_bar select#sch_par,
+header #search_bar #butn_submit {
+  display: block;
+  float: left;
+  margin-right: 1px;
+  /*as dividers*/ }
+
+/*Style of search field*/
+header #search_bar input#sch_field {
+  padding: 5px 8px;
+  width: 419px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  height: 19px; }
+
+header #search_bar input#sch_field,
+header #search_bar select#sch_par {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4) inset; }
+
+/*Style of the box of parameters of search*/
+/*!!! Later can be done better: with button moved to the left 
+    and adding other arrow*/
+header #search_bar select#sch_par {
+  font-size: 11px;
+  /*! Below must be as full height of 
+      "header #search_bar input#sch_field"*/
+  height: 29px;
+  color: #999999;
+  background-color: white;
+  border: none;
+  padding: 3px 0px 0px 6px; }
+
+header #search_bar select#sch_par:hover {
+  color: black;
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -webkit-linear-gradient(top, #f9f9f9 0%, #d8d8d8 70%); }
+
+/*Style of the submit batton*/
+header #search_bar #butn_submit {
+  border: none;
+  background: #f9ec75;
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -webkit-linear-gradient(top, #f2f2f2 0%, #f9ec75 20%, #f3ce00 70%);
+  border: 1px solid #E6B800;
+  border-radius: 0 3px 3px 0;
+  padding: 0px; }
+
+header #search_bar #butn_submit:hover {
+  border: none;
+  background: #F3CE00;
+  border: 1px solid #E6B800;
+  cursor: pointer; }
+
+header #search_bar #butn_submit div {
+  padding: 5px 7px;
+  /*First value must be the same as in #sch_field*/
+  width: 18px;
+  height: 17px;
+  /*Must be the same as in #sch_field minus 2*border of #butn_submit*/
+  /*!!! Add better quality picture*/
+  background: url("../pics/header/submit_pic.png") no-repeat center center; }
+
+header #nav_menu {
+  position: absolute;
+  left: 141px;
+  bottom: 0px; }
+
+header #nav_menu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
+
+header #nav_menu ul::after {
+  /*The clearfix Hack*/
+  content: "";
+  clear: both;
+  display: table; }
+
+header #nav_menu li {
+  display: block;
+  float: left;
+  position: relative;
+  /*for absolute positioning of childrens*/
+  margin: 0px;
+  padding: 7px 40px 9px 15px;
+  /*border: 2px solid white;*/
+  color: white;
+  /*background: url("../pics/header/nav_menu_arrow.png") no-repeat;*/ }
+
+header #nav_menu li:hover {
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -webkit-linear-gradient(bottom, #333333 15%, #505050 50%, #333333 85%); }
+
+/*Style of nav menu arrows*/
+header #nav_menu li div.nav_menu_arrow {
+  position: absolute;
+  right: 16px;
+  top: 22px;
+  width: 10px;
+  height: 5px;
+  background: url("../pics/header/nav_menu_arrow.png") no-repeat; }
+
+header #nav_menu li p {
+  margin: 0px;
+  padding: 0px; }
+
+/*Style of the links inside the menu bars*/
+header #nav_menu li p a:link {
+  color: white;
+  text-decoration: none; }
+
+header #nav_menu li p a:visited {
+  color: white;
+  text-decoration: none; }
+
+header #nav_menu li p a:hover {
+  text-decoration: underline; }
+
+header #nav_menu li div.sub_nav {
+  display: none;
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+  margin: 0px;
+  padding: 0px;
+  width: 600px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); }
+
+/*Last sub bar from nav menu must be aligned to the left corner of button.
+      !!! Can be done thru javascript.*/
+header #nav_menu ul li:nth-last-child(2) div.sub_nav {
+  left: auto;
+  right: 0px; }
+
+/*!!! Do thru javascript*/
+header #nav_menu ul li:nth-last-child(2) p {
+  padding-top: 10px; }
+
+/*!!! Do thru javascript*/
+header #nav_menu ul li p#watchlist a {
+  color: #f5de50; }
+
+header #nav_menu .nav_menu_divider {
+  float: left;
+  width: 1px;
+  height: 36px;
+  /*javascript*/
+  margin: 0px;
+  padding: 0px;
+  background-color: lightblue;
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -webkit-linear-gradient(top, #333333 15%, #727272 50%, #232323 85%); }
+
+/*!!! Do this later*/
+header #head_other {
+  height: 40px;
+  width: 20%;
+  float: right; }
+
+/*Applying flex box to main + aside*/
+#flex_cont_main_pls_aside {
+  display: -webkit-flex;
+  /*for later Chrome*/ }
+
+/*Aside style*/
+aside {
+  box-sizing: -webkit-border-box;
+  background-color: #ededec;
+  border-left: 3px solid #999; }
+
+/*!!! Below just fast filler - it must be made better*/
+aside #aside_plug {
+  padding: 0px 19px; }
+
+aside #aside_plug .aside_1 {
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 20px;
+  padding-top: 16px; }
+
+aside #aside_plug .aside_1:last-child {
+  border-bottom: none; }
+
+aside #aside_plug h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0px;
+  margin-bottom: 14px; }
+
+aside #aside_plug ul {
+  padding-left: 15px;
+  margin: 12px 0px 20px 0px; }
+
+aside #aside_plug .list_1 li {
+  position: relative;
+  /*For absolute positioning of the children's*/
+  list-style-type: none;
+  padding-bottom: 20px; }
+
+aside #aside_plug .list_1 li:last-child {
+  padding-bottom: 0px; }
+
+aside #aside_plug .list_1 li div {
+  float: right;
+  font-size: 11px; }
+
+/*Style for links of aside, main and footer.
+  !!! Later must be done better, as global style*/
+aside #aside_plug .list_1 a:link,
+main .main_article a:link,
+footer a:link {
+  color: #136cb2;
+  text-decoration: none; }
+
+aside #aside_plug .list_1 a:visited,
+main .main_article a:visited,
+footer a:visited {
+  color: #70579d; }
+
+aside #aside_plug .list_1 a:hover,
+main .main_article a:hover,
+footer a:hover {
+  text-decoration: underline; }
+
+/*Some part of the link must not have link style at all*/
+footer table a:link span.link_no_style {
+  color: #333;
+  text-decoration: none; }
+
+footer table a:visited span.link_no_style {
+  color: #333; }
+
+/*!!! Do this properly later*/
+footer table a:hover span.link_no_style {
+  text-decoration: none; }
+
+/*Changes fo h1 links*/
+aside #aside_plug .list_1 h1 a:link,
+main .main_article h1 a:link {
+  color: inherit;
+  text-decoration: none; }
+
+aside #aside_plug .list_1 h1 a:visited,
+main .main_article h1 a:visited {
+  color: inherit; }
+
+aside #aside_plug .list_1 h1 a:hover,
+main .main_article h1 a:hover {
+  color: #136cb2;
+  text-decoration: underline; }
+
+/*Main style. Below is just for test. Must be improved later*/
+main .main_article {
+  padding: 20px 21px 24px 20px;
+  border-top: 1px solid #CCC; }
+
+main .main_article h1 {
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: normal; }
+
+main .main_article .group_of_pics {
+  display: flex;
+  -webkit-justify-content: space-between; }
+
+main .main_article p {
+  margin: 13px 0px 13px 0px;
+  line-height: 1.4; }
+
+main .main_article p.seemore {
+  margin-top: 20px; }
+
+/*Footer style*/
+footer {
+  background-color: #ededec;
+  border-top: 1px solid #CCC; }
+
+/*!!! Below just for test. Must be improved later*/
+footer #footer_part1 {
+  padding: 20px;
+  padding-bottom: 30px; }
+
+footer #footer_part1 #amazon_and_copy::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+footer #footer_part1 #amazon_and_copy p:first-child {
+  float: left; }
+
+footer #footer_part1 #amazon_and_copy p:last-child {
+  float: right; }
+
+footer #footer_part1 #amazon_and_copy p {
+  margin: 0px;
+  font-size: 11px; }
+
+footer #footer_part1 #amazon_and_copy #amazon_logo {
+  display: inline-block;
+  background-image: url("../pics/footer/amazon_logo.png");
+  text-indent: -900px;
+  width: 76px;
+  height: 16px; }
+
+footer #footer_part1 #amazon_and_copy {
+  margin-bottom: 30px; }
+
+footer #footer_part1 table {
+  font-size: 10px; }
+
+footer #footer_part1 table th {
+  font-weight: normal; }
+
+footer #footer_part1 table td {
+  padding-left: 50px; }
+
+footer #footer_part1 table td:first-child {
+  padding-left: 1px; }
