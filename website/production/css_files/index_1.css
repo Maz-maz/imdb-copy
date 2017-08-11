@@ -31,6 +31,20 @@ aside {
   font-size: 13px;
   color: #333; }
 
+a:link {
+  color: #136cb2;
+  text-decoration: none; }
+
+a:visited {
+  color: #70579d; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  color: #edc717;
+  text-decoration: none; }
+
 /*Header style*/
 #header_wrap {
   background-color: #575757; }
@@ -182,15 +196,13 @@ header #nav_menu li p {
   padding: 0px; }
 
 /*Style of the links inside the menu bars*/
-header #nav_menu li p a:link {
-  color: white;
+header #nav_menu a {
+  color: white; }
+
+header #nav_menu a:link {
   text-decoration: none; }
 
-header #nav_menu li p a:visited {
-  color: white;
-  text-decoration: none; }
-
-header #nav_menu li p a:hover {
+header #nav_menu a:hover {
   text-decoration: underline; }
 
 header #nav_menu li div.sub_nav {
@@ -213,12 +225,12 @@ header #nav_menu ul li:nth-last-child(2) div.sub_nav {
   left: auto;
   right: 0px; }
 
-/*!!! Do thru javascript*/
+/*!!! ? Do thru javascript*/
 header #nav_menu ul li:nth-last-child(2) p {
   padding-top: 10px; }
 
-/*!!! Do thru javascript*/
-header #nav_menu ul li p#watchlist a {
+/*!!! ? Do thru javascript*/
+header #nav_menu #watchlist a {
   color: #f5de50; }
 
 header #nav_menu .nav_menu_divider {
@@ -238,10 +250,25 @@ header #head_other {
   width: 20%;
   float: right; }
 
+/***************MAIN AND ASIDE STYLE****************************/
 /*Applying flex box to main + aside*/
 #flex_cont_main_pls_aside {
   display: -webkit-flex;
   /*for later Chrome*/ }
+
+/*Changes for h3 links in the .main_article and .aside_1*/
+aside .aside_1 a:link h3,
+main .main_article a:link h3 {
+  color: #333;
+  text-decoration: none; }
+
+aside .aside_1 a:visited h3,
+main .main_article a:visited h3 {
+  color: #333; }
+
+aside .aside_1 a:hover h3,
+main .main_article a:hover h3 {
+  color: #136cb2; }
 
 /*Aside style*/
 aside {
@@ -261,7 +288,7 @@ aside #aside_plug .aside_1 {
 aside #aside_plug .aside_1:last-child {
   border-bottom: none; }
 
-aside #aside_plug h1 {
+aside #aside_plug h3 {
   font-size: 18px;
   font-weight: normal;
   margin: 0px;
@@ -284,57 +311,12 @@ aside #aside_plug .list_1 li div {
   float: right;
   font-size: 11px; }
 
-/*Style for links of aside, main and footer.
-  !!! Later must be done better, as global style*/
-aside #aside_plug .list_1 a:link,
-main .main_article a:link,
-footer a:link {
-  color: #136cb2;
-  text-decoration: none; }
-
-aside #aside_plug .list_1 a:visited,
-main .main_article a:visited,
-footer a:visited {
-  color: #70579d; }
-
-aside #aside_plug .list_1 a:hover,
-main .main_article a:hover,
-footer a:hover {
-  text-decoration: underline; }
-
-/*Some part of the link must not have link style at all*/
-footer table a:link span.link_no_style {
-  color: #333;
-  text-decoration: none; }
-
-footer table a:visited span.link_no_style {
-  color: #333; }
-
-/*!!! Do this properly later*/
-footer table a:hover span.link_no_style {
-  text-decoration: none; }
-
-/*Changes fo h1 links*/
-aside #aside_plug .list_1 h1 a:link,
-main .main_article h1 a:link {
-  color: inherit;
-  text-decoration: none; }
-
-aside #aside_plug .list_1 h1 a:visited,
-main .main_article h1 a:visited {
-  color: inherit; }
-
-aside #aside_plug .list_1 h1 a:hover,
-main .main_article h1 a:hover {
-  color: #136cb2;
-  text-decoration: underline; }
-
 /*Main style. Below is just for test. Must be improved later*/
 main .main_article {
   padding: 20px 21px 24px 20px;
   border-top: 1px solid #CCC; }
 
-main .main_article h1 {
+main .main_article h3 {
   margin: 0px;
   margin-bottom: 20px;
   font-size: 24px;
@@ -397,3 +379,21 @@ footer #footer_part1 table td {
 
 footer #footer_part1 table td:first-child {
   padding-left: 1px; }
+
+/*!!!Some part of the link must not have link style at all, 
+bust some must have*/
+footer table#amazon_affilates a:hover {
+  text-decoration: none; }
+
+footer table#amazon_affilates a:hover span.link_style {
+  text-decoration: underline; }
+
+footer table#amazon_affilates a:active span.link_style {
+  text-decoration: none; }
+
+footer table#amazon_affilates a:link span.link_no_style {
+  color: #333;
+  text-decoration: none; }
+
+footer table#amazon_affilates a:visited span.link_no_style {
+  color: #333; }
