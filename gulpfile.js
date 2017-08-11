@@ -64,10 +64,17 @@ gulp.task("opt-assets", function() {
 });
 
 // Optimization of images
-gulp.task("opt-images", function() {
+//!!! (later can be done better and not by using two tasks)
+gulp.task("opt-images-1", function() {
   return gulp.src("website/production/pics/**/*.+(png|jpg|gif|svg)")
     .pipe(cache(imagemin()))
     .pipe(gulp.dest("website/distribution/pics"))
+});
+
+gulp.task("opt-images-2", function() {
+  return gulp.src("website/production/articles/**/*.+(png|jpg|gif|svg)")
+    .pipe(cache(imagemin()))
+    .pipe(gulp.dest("website/distribution/articles"))
 });
 
 // Cleaning cache
@@ -76,10 +83,16 @@ gulp.task("cache-clean", function(done) {
 });
 
 // Move what left to dist folder (mus be changed if added file mainly to the production folder, but not to sub folders)
-gulp.task("move-else", function() {
+// !!! (later can be done better and not by using two tasks)
+gulp.task("move-else-1", function() {
   return gulp.src(["website/production/favicon.ico",
    "website/production/index.html"])
-    .pipe(gulp.dest("website/distribution"))
+    .pipe(gulp.dest("website/distribution"));
+});
+
+gulp.task("move-else-2", function() {
+  return gulp.src("website/production/articles/**/*")
+    .pipe(gulp.dest("website/distribution/articles"));
 });
 
 // Delete distribution folder
@@ -89,7 +102,9 @@ gulp.task("dist-clean", function() {
 
 // One task for building project to distribution
 gulp.task("build", function(callback) {
-  seq("clean", "sass", "opt-assets", "opt-images", "move-else", callback);
+  seq("dist-clean", "sass", "opt-assets", 
+  "move-else-1", "move-else-2", /*! This must be before opt-images-2*/
+  "opt-images-1", "opt-images-2", callback);
 });
 
 // One task for cleaning after job
