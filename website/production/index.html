@@ -39,28 +39,61 @@
             </form>
           </div>
           <div id="nav_menu">
-            <ul>
+            <!--Alot of using "nav_menu_divider" is neded to make that style for buttons elements
+            will be applayed only to that what is relative to buttons, but not to that what is "insight"
+            the "id.nav_menu" but not part of the button itself.
+            !!! Maybe later this can be done better-->
+            <ul class="nav_menu_buttons">
               <div class="nav_menu_divider"></div> <!--javascript-->
-              <li>
-                <p><a href="#">Movies</a>, <a href="#">TV</a><br>&#38 <a href="#">Showtimes</a></p>
+              <li class="nav_menu_buttons">
+                <p class="nav_menu_buttons"><a href="#">Movies</a>, <a href="#">TV</a><br>&#38 <a href="#">Showtimes</a></p>
+                <div class="nav_menu_arrow"></div>
+                <div class="sub_nav">
+                  <div class="clearfix_hack">
+                  <div class="list_box_1">
+                    <h5>MOVIES<h5>
+                    <ul>
+                      <li>In Theaters</li>
+                      <li>Showtimes &#38 Tickets</li>
+                      <li>Latest Trailers</li>
+                      <li>Coming Soon</li>
+                      <li>Release Calendar</li>
+                      <li>Top Rated Movies</li>
+                      <li>Top Rated Indian Movies</li>
+                      <li>Most Popular Movies</li>
+                    </ul>
+
+                    <h5>CHARTS &#38 TRENDS<h5>
+                    <ul>
+                      <li>Box Office</li>
+                      <li>Oscar Winners</li>
+                      <li>Most Popular by Genre</li>
+                    </ul>
+                  </div>
+                  <div class="list_box_1">
+                    test2
+                  </div>
+                  <div class="ad_to_list_1">
+                    test3
+                  </div>
+                </div>
+                </div>
+              </li>
+              <div class="nav_menu_divider"></div> <!--javascript-->
+              <li class="nav_menu_buttons">
+                <p class="nav_menu_buttons"><a href="#">Celebs</a>, <a href="#">Events</a><br>&#38 <a href="#">Photos</a></p>
                 <div class="nav_menu_arrow"></div>
                 <div class="sub_nav"></div>
               </li>
               <div class="nav_menu_divider"></div> <!--javascript-->
-              <li>
-                <p><a href="#">Celebs</a>, <a href="#">Events</a><br>&#38 <a href="#">Photos</a></p>
+              <li class="nav_menu_buttons">
+                <p class="nav_menu_buttons"><a href="#">News</a> &#38<br><a href="#">Community</a></p>
                 <div class="nav_menu_arrow"></div>
                 <div class="sub_nav"></div>
               </li>
               <div class="nav_menu_divider"></div> <!--javascript-->
-              <li>
-                <p><a href="#">News</a> &#38<br><a href="#">Community</a></p>
-                <div class="nav_menu_arrow"></div>
-                <div class="sub_nav"></div>
-              </li>
-              <div class="nav_menu_divider"></div> <!--javascript-->
-              <li>
-                <p id="watchlist"><a href="#">Watchlist</a></p>
+              <li class="nav_menu_buttons">
+                <p class="nav_menu_buttons" id="watchlist"><a href="#">Watchlist</a></p>
                 <div class="nav_menu_arrow"></div>
                 <div class="sub_nav"></div>
               </li>

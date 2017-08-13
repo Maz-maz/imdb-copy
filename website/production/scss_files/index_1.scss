@@ -184,19 +184,27 @@ header #imdb_logo {
     bottom: 0px;
   }
 
-    header #nav_menu ul {
+
+  // Style of the menu battons
+
+    /*Alot of using "nav_menu_divider" is neded to make that style for buttons elements
+    will be applayed only to that what is relative to buttons, but not to that what is "insight"
+    the "id.nav_menu" but not part of the button itself.
+    !!! Maybe later this can be done better*/
+
+    header #nav_menu ul.nav_menu_buttons {
       list-style-type: none;
       margin: 0px;
       padding: 0px;
     }
 
-    header #nav_menu ul::after { /*The clearfix Hack*/
+    header #nav_menu ul.nav_menu_buttons::after { /*The clearfix Hack*/
     content: "";
     clear: both;
     display: table;
     }
 
-    header #nav_menu li {
+    header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons {
       display: block;
       float: left;
       position: relative; /*for absolute positioning of childrens*/
@@ -207,13 +215,13 @@ header #imdb_logo {
       /*background: url("../pics/header/nav_menu_arrow.png") no-repeat;*/
     }
 
-    header #nav_menu li:hover {
+    header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons:hover {
       /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
       background-image: -webkit-linear-gradient(bottom, #333333 15%,#505050 50%,#333333 85%);
     }
 
       /*Style of nav menu arrows*/
-      header #nav_menu li div.nav_menu_arrow {
+      header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons div.nav_menu_arrow {
         position: absolute;
         right: 16px;
         top: 22px;
@@ -222,7 +230,7 @@ header #imdb_logo {
         background: url("../pics/header/nav_menu_arrow.png") no-repeat;
       }
 
-      header #nav_menu li p {
+      header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons p.nav_menu_buttons {
         margin: 0px;
         padding: 0px;
       }
@@ -239,8 +247,10 @@ header #imdb_logo {
       header #nav_menu a:hover{
         text-decoration: underline;
       }
-
-    header #nav_menu li div.sub_nav {
+    
+    // Style of sub boxes below the nav menu bars
+    header #nav_menu li.nav_menu_buttons .sub_nav {
+      color: $glob-font-col;
       display: none;
       position: absolute;
       left: 0px;
@@ -255,6 +265,31 @@ header #imdb_logo {
       box-shadow: 0 2px 5px rgba(0,0,0,0.6);
     }
 
+    // Clearfix hack for floating of inner elements
+    .clearfix_hack {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    // Clear all style for ul
+    /*
+    .zero_style_list {
+      margin: 0;
+      padding: 0;
+      color: black;
+    */
+    
+    .list_box_1 {
+      float: left;
+      padding-left: 18px;
+    }
+
+    .ad_to_list_1 {
+      float: left;
+      padding-left: 18px;
+    }
+
     /*Last sub bar from nav menu must be aligned to the left corner of button.
       !!! Can be done thru javascript.*/
     header #nav_menu ul li:nth-last-child(2) div.sub_nav {
@@ -262,7 +297,7 @@ header #imdb_logo {
       right: 0px;
     }
     /*!!! ? Do thru javascript*/
-    header #nav_menu ul li:nth-last-child(2) p {
+    header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons:nth-last-child(2) p.nav_menu_buttons {
       padding-top: 10px;
     }
 
