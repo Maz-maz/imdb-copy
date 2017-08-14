@@ -199,7 +199,7 @@ header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons p.nav_menu_buttons {
   margin: 0px;
   padding: 0px; }
 
-/*Style of the links inside the menu bars*/
+/*Style of the links inside the menu bars and inside sub_nav*/
 header #nav_menu a {
   color: white; }
 
@@ -210,15 +210,14 @@ header #nav_menu a:hover {
   text-decoration: underline; }
 
 header #nav_menu li.nav_menu_buttons .sub_nav {
-  color: #333;
+  color: #555;
   display: none;
   position: absolute;
   left: 0px;
   z-index: 10;
   margin: 0px;
   padding: 0px;
-  width: 600px;
-  height: 300px;
+  height: 315px;
   background-color: #f2f2f2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -227,21 +226,54 @@ header #nav_menu li.nav_menu_buttons .sub_nav {
 .clearfix_hack {
   content: "";
   clear: both;
-  display: table; }
+  display: table;
+  width: 786px; }
 
-/*
-    .zero_style_list {
-      margin: 0;
-      padding: 0;
-      color: black;
-    */
 .list_box_1 {
   float: left;
   padding-left: 18px; }
 
-.ad_to_list_1 {
-  float: left;
+.list_box_1 ul {
+  padding: 0;
+  margin: 0; }
+
+.list_box_1 li {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  list-style-type: none;
+  line-height: 16px !important; }
+
+.list_box_1 li a {
+  color: #555 !important; }
+
+.list_box_1 h5 {
+  margin: 20px 0 10px;
+  color: #A58500; }
+
+.ad_to_list_bx_1 {
+  float: right;
   padding-left: 18px; }
+
+.ad_to_list_bx_1 a.list_bx_1_pic {
+  display: block;
+  width: 410px;
+  height: 315px;
+  border-bottom-right-radius: 10px;
+  background-image: url("../pics/header/sub_nav_1/list_bx_1_pic.jpg");
+  background-size: cover; }
+
+#sub_nav_bx_2 {
+  width: 500px;
+  height: 100px; }
+
+#sub_nav_bx_3 {
+  width: 500px;
+  height: 100px; }
+
+#sub_nav_bx_4 {
+  width: 500px;
+  height: 100px; }
 
 /*Last sub bar from nav menu must be aligned to the left corner of button.
       !!! Can be done thru javascript.*/

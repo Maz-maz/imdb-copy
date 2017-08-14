@@ -2,9 +2,9 @@
 /*!!! This code can be done better true using "Element.querySelector()"*/
 
 /*Get navigation menu tabs*/
-var navMenuTabs = document.querySelectorAll("#nav_menu li");
+var navMenuTabs = document.querySelectorAll("#nav_menu li.nav_menu_buttons");
 /*Get <p> inside navigation menu tabs*/
-var navMenuPara = document.querySelectorAll("#nav_menu li p");
+var navMenuPara = document.querySelectorAll("#nav_menu li.nav_menu_buttons p.nav_menu_buttons");
 /*Maximum height of <p>*/
 var paraMaxH = 0;
 
