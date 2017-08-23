@@ -1,0 +1,21 @@
+/*Temporary inserts for testing of the module*/
+.shelves_temp_ins_1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.logo__link {
+  display: block;
+  margin: 0;
+  padding: 0; /*second background image (below) to remove blinking*/
+  background-image: url("../img/imdb_logo_unhover.png"), url("../img/imdb_logo_hover.png");
+  width: 101px;
+  height: 49px;
+
+}
+
+.logo__link:hover {
+  background-image: url("../img/imdb_logo_hover.png");
+  cursor: pointer;
+}

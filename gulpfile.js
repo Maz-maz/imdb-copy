@@ -9,8 +9,14 @@ var css_files_out = [];
 scss_files_in[0] = "website/new_edition/modules/shelves/scss/**/*.+(scss|sass)";
 css_files_out[0] = "website/new_edition/modules/shelves/css";
 
-scss_files_in[1] = "website/new_edition/modules/nav_menu/scss/**/*.+(scss|sass)";
-css_files_out[1] = "website/new_edition/modules/nav_menu/css";
+scss_files_in[1] = "website/new_edition/modules/logo/scss/**/*.+(scss|sass)";
+css_files_out[1] = "website/new_edition/modules/logo/css";
+
+scss_files_in[2] = "website/new_edition/modules/search_bar/scss/**/*.+(scss|sass)";
+css_files_out[2] = "website/new_edition/modules/search_bar/css";
+
+scss_files_in[3] = "website/new_edition/modules/nav_menu/scss/**/*.+(scss|sass)";
+css_files_out[3] = "website/new_edition/modules/nav_menu/css";
 
 
 // Convert scss to css

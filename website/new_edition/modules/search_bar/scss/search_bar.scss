@@ -1,0 +1,83 @@
+/*Temporary inserts for testing of the module*/
+.shelves_temp_ins_1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+
+/*Style of the search_bar*/
+/*!!! Can be done thru divided class
+Clearfix hack*/
+.search_bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.search_bar__sch_field, 
+.search_bar__par,
+.search_bar__butn_submit {
+  display: block;
+  float: left;
+  margin-right: 1px; /*as dividers*/
+}
+
+.search_bar__sch_field {
+  padding: 5px 8px;
+  width: 419px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  height: 19px;
+}
+
+.search_bar--shadow {
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.4) inset;
+}
+
+/*Style of the box of parameters of search*/
+/*!!! Later can be done better: with button moved to the left 
+and adding other arrow*/
+.search_bar__par {
+  font-size: 11px;
+  /*! Below must be as full height of 
+  "header #search_bar input#sch_field"*/
+  height: 29px;
+  color: #999999;
+  background-color: white;
+  border: none;
+  padding: 3px 0px 0px 6px;
+}
+
+.search_bar__par:hover {
+  color: black;
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -webkit-linear-gradient(top, #f9f9f9 0%,#d8d8d8 70%);
+}
+
+/*Style of the submit batton*/
+.search_bar__butn_submit {
+  border: none;
+  background: #f9ec75;
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -webkit-linear-gradient(top, #f2f2f2 0%, #f9ec75 20%, #f3ce00 70%);
+  border: 1px solid #E6B800;
+  border-radius: 0 3px 3px 0;
+  padding: 0px;
+}
+
+.search_bar__butn_submit:hover {
+  border: none;
+  background: #F3CE00;
+  border: 1px solid #E6B800;
+  cursor: pointer;
+}
+
+.search_bar__butn_submit > div {
+  padding: 5px 7px; /*First value must be the same as in #sch_field*/
+  width: 18px;
+  height: 17px; /*Must be the same as in #sch_field minus 2*border of #butn_submit*/
+  /*!!! Add better quality picture*/
+  background: url("../img/submit_pic.png") no-repeat center center;
+}

@@ -97,6 +97,7 @@ header #imdb_logo {
   padding: 17px 20px;
 }
 
+/*b*/
 /*Style of logo*/
   #imdb_logo a {
     display: block;
@@ -112,6 +113,9 @@ header #imdb_logo {
     background-image: url("../pics/header/imdb_logo_hover.png");
     cursor: pointer;
   }
+/*e*/
+
+/*b*/
   /*Style of the search_bar and nav_menu*/
   header #search_bar {
     position: absolute;
@@ -188,15 +192,17 @@ header #imdb_logo {
       /*!!! Add better quality picture*/
       background: url("../pics/header/submit_pic.png") no-repeat center center;
     }
+/*e*/
 
-
+/*x*/
   header #nav_menu {
     position: absolute;
     left: 141px;
     bottom: 0px;
   }
+/*x*/
 
-
+/*b*/
   // Style of the menu battons
 
     /*Alot of using "nav_menu_divider" is neded to make that style for buttons elements
@@ -215,7 +221,8 @@ header #imdb_logo {
     clear: both;
     display: table;
     }
-
+/*e*/
+/*b*/
     header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons {
       display: block;
       float: left;
@@ -226,12 +233,16 @@ header #imdb_logo {
       color: white;
       /*background: url("../pics/header/nav_menu_arrow.png") no-repeat;*/
     }
+/*e*/
 
+/*b*/
     header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons:hover {
       /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
       background-image: -webkit-linear-gradient(bottom, #333333 15%,#505050 50%,#333333 85%);
     }
+/*e*/
 
+/*b*/
       /*Style of nav menu arrows*/
       header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons div.nav_menu_arrow {
         position: absolute;
@@ -241,12 +252,16 @@ header #imdb_logo {
         height: 5px;
         background: url("../pics/header/nav_menu_arrow.png") no-repeat;
       }
+/*e*/
 
+/*b*/
       header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons p.nav_menu_buttons {
         margin: 0px;
         padding: 0px;
       }
+/*e*/
 
+/*b*/
       /*Style of the links inside the menu bars and inside sub_nav*/
       header #nav_menu a{
         color: white;
@@ -259,7 +274,8 @@ header #imdb_logo {
       header #nav_menu a:hover{
         text-decoration: underline;
       }
-    
+/*e*/
+
     // Style of sub boxes below the nav menu bars
     header #nav_menu li.nav_menu_buttons .sub_nav {
       // Below is main color for text in the .sub_nav

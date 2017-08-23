@@ -1,3 +1,4 @@
+/* Layout for shelves module*/
 body {
   margin: 0;
   padding: 0; }
@@ -36,7 +37,7 @@ main {
 aside {
   width: 34%; }
 
-/*Aside style*/
+/***************ASIDE STYLE****************************/
 aside {
   box-sizing: -webkit-border-box;
   background-color: #ededec;
@@ -47,6 +48,7 @@ footer {
   background-color: #ededec;
   border-top: 1px solid #CCC; }
 
+/* Temporary inserts for testing of the module*/
 .shelves_temp_ins_1 {
   background-color: red;
   width: 100px;

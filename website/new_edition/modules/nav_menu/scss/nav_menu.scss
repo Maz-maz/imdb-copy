@@ -1,0 +1,69 @@
+/*Temporary inserts for testing of the module*/
+.shelves_temp_ins_1 {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+// Style of the menu battons
+
+    /*Alot of using "nav_menu_divider" is neded to make that style for buttons elements
+    will be applayed only to that what is relative to buttons, but not to that what is "insight"
+    the "id.nav_menu" but not part of the button itself.
+    !!! Maybe later this can be done better*/
+
+.nav_menu {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_menu::after { /*The clearfix Hack*/
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav_menu__buttons {
+  display: block;
+  float: left;
+  position: relative; /*for absolute positioning of childrens*/
+  margin: 0px;
+  padding: 7px 40px 9px 15px ;
+  /*border: 2px solid white;*/
+  color: white;
+  /*background: url("../pics/header/nav_menu_arrow.png") no-repeat;*/
+}
+
+.nav_menu__buttons:hover {
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -webkit-linear-gradient(bottom, #333333 15%,#505050 50%,#333333 85%);
+}
+
+/*Style of nav menu arrows*/
+.nav_menu__arrow {
+  position: absolute;
+  right: 16px;
+  top: 22px;
+  width: 10px;
+  height: 5px;
+  background: url("../img/nav_menu_arrow.png") no-repeat;
+}
+
+.nav_menu__buttons > p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Style of the links inside the menu bars and inside sub_nav*/
+.nav_menu a{
+  color: white;
+}
+
+.nav_menu a:link{
+  text-decoration: none;
+}
+
+.nav_menu a:hover{
+  text-decoration: underline;
+}

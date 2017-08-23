@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <!--!!! To watch what need to be done search for "!!!" in the comments-->
+<head>
+  <meta charset="UTF-8">
+  <title>search_bar module</title>
+  <!--Below is style for module scene-->
+  <link rel="stylesheet" type="text/css" href="modules/modules-test.css">
+  <link rel="stylesheet" type="text/css" href="modules/search_bar/css/search_bar.css">
+</head>
+<body>
+  <!--!!! For test. Must be commented-->
+  <!--
+  <div class="shelves_temp_ins_1"></div>
+  -->
+
+<!--mod_search_bar_b-->
+<div class="search_bar">
+  <form class="search_bar__form" method="get" action="/find/search.php">
+    <input class="search_bar__sch_field search_bar--shadow"
+     type="text" placeholder="Find Movies, TV shows, Celebrities and more..." 
+    name="name_1"> <!--!!! Add better name-->
+    <select class="search_bar__par search_bar--shadow" name="name_2" id="sch_par"> <!--!!! Add better name-->
+      <option value="all">All</option> <!--!!!Make first letter uppercase true javascript-->
+      <option value="titles">Titles</option>
+      <option value="episodes">TV Episodes</option>
+      <option value="names">Names</option>
+      <option value="companies">Companies</option>
+      <option value="advanced">Advanced Search »</option>
+    </select>
+    <!--What below can be done through javascript-->
+    <button class="search_bar__butn_submit" 
+    onclick="document.getElementById('search_bar_form').submit();"><div></div></button>
+  </form>
+</div>
+<!--mod_search_bar_e-->
+</body>
+</html>
