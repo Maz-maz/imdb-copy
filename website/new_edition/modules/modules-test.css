@@ -4,3 +4,10 @@ body {
   border: 50px solid #FFBABA;
   background-color: #A7A7A7;
 }
+
+/* Temporary inserts for testing of the module*/
+.modules_test_ins_1 {
+  background-color: red;
+  width: 500px;
+  height: 100px;
+}

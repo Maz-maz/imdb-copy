@@ -48,7 +48,7 @@ footer {
   color: $glob-font-col;
 }
 
-// General link style
+/* General link style*/
 a:link {
   color: $glob-link-col;
   text-decoration: none;
@@ -276,6 +276,7 @@ header #imdb_logo {
       }
 /*e*/
 
+/*b*/
     // Style of sub boxes below the nav menu bars
     header #nav_menu li.nav_menu_buttons .sub_nav {
       // Below is main color for text in the .sub_nav
@@ -292,6 +293,7 @@ header #imdb_logo {
       border-bottom-right-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.6);
     }
+/*e*/
 
     // Clearfix hack for floating of inner elements
     // !!! Need to be done for every chaild others
@@ -362,12 +364,16 @@ header #imdb_logo {
         height: 100px;
       }
 
+/*b*/
     /*Last sub bar from nav menu must be aligned to the left corner of button.
       !!! Can be done thru javascript.*/
     header #nav_menu ul li:nth-last-child(2) div.sub_nav {
       left: auto;
       right: 0px;
     }
+/*e*/
+
+/*b*/
     /*!!! ? Do thru javascript*/
     header #nav_menu ul.nav_menu_buttons li.nav_menu_buttons:nth-last-child(2) p.nav_menu_buttons {
       padding-top: 10px;
@@ -377,7 +383,9 @@ header #imdb_logo {
     header #nav_menu #watchlist a {
       color: #f5de50;
     }
+/*e*/
 
+/*b*/
     header #nav_menu .nav_menu_divider {
       float: left;
       width: 1px;
@@ -388,6 +396,7 @@ header #imdb_logo {
       /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
       background-image: -webkit-linear-gradient(top, #333333 15%, #727272 50%, #232323 85%);
     }
+/*e*/
 
 /*!!! Do this later*/
 header #head_other {
