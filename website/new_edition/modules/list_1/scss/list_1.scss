@@ -1,0 +1,41 @@
+.list_1__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+/*clearfix hack*/
+.list_1__list_item::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.list_1__list_item {
+  padding-bottom: 12px;
+}
+
+.list_1__list_ribbon {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/list_1_ribbon.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-right: 4px;
+}
+
+.list_1__list_ribbon:hover {
+  background-image: url("../img/list_1_ribbon.png"), url("../img/list_1_ribbon.png");
+}
+
+.list_1__object {
+  display: block;
+  float: left;  
+}
+
+.list_1__object_status {
+  display: block;
+  float: right;
+  font-size: 0.85em;
+}
