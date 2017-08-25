@@ -32,7 +32,7 @@
 
 .nav_menu__buttons:hover {
   /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background-image: -webkit-linear-gradient(bottom, #333333 15%, #505050 50%, #333333 85%); }
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 85%); }
 
 .nav_menu__divider {
   float: left;
@@ -41,9 +41,10 @@
   /*javascript*/
   margin: 0px;
   padding: 0px;
-  background-color: lightblue;
+  /*background-color: lightblue; -- !!! This must be done separately for older browsers, 
+  but if that what is below is supported than, present of background colour brake gradient*/
   /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background-image: -webkit-linear-gradient(top, #333333 15%, #727272 50%, #232323 85%); }
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 15%, rgba(255, 255, 255, 0.45) 50%, rgba(0, 0, 0, 0.45) 85%); }
 
 /*Some corrections for last button*/
 /*!!! ? Do thru javascript*/
@@ -81,7 +82,7 @@
   color: green;
   display: none;
   position: absolute;
-  left: 0px;
+  left: 0;
   z-index: 10;
   margin: 0px;
   padding: 0px;
@@ -94,7 +95,7 @@
 !!! Can be done thru javascript.*/
 .nav_menu__buttons:nth-last-child(2) > .nav_menu__sub_nav {
   left: auto;
-  right: 0px; }
+  right: 0; }
 
 .nav_menu__buttons:hover > .nav_menu__sub_nav {
   display: block; }

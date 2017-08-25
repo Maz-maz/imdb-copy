@@ -34,7 +34,7 @@ for (i = 0; i < scss_files_in.length; i++) {
 });
 
 // In particular for automatically renew css thru scss
-gulp.task("watch", function() {
+gulp.task("watch", ["sass"], function() {
   for (i = 0; i < scss_files_in.length; i++) {
   gulp.watch(scss_files_in[i], ["sass"]);};
   //gulp.watch(html_files, browserSync.reload);

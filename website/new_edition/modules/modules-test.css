@@ -2,12 +2,12 @@ body {
   margin: 25px;
   padding: 0;
   border: 50px solid #FFBABA;
-  background-color: #A7A7A7;
+  background-color: #333333;
 }
 
 /* Temporary inserts for testing of the module*/
 .modules_test_ins_1 {
-  background-color: red;
-  width: 500px;
+  background-color: #A1A1FF;
+  width: 100px;
   height: 100px;
 }
