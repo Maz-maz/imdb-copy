@@ -9,7 +9,7 @@
   display: table; }
 
 .list_1__list_item {
-  padding-bottom: 12px; }
+  margin-bottom: 12px; }
 
 .list_1__list_ribbon {
   display: block;
@@ -32,3 +32,6 @@
   display: block;
   float: right;
   font-size: 0.85em; }
+
+.list_1__seemore::after {
+  content: "\00a0\00bb"; }
