@@ -24,6 +24,9 @@ css_files_out[4] = "website/new_edition/modules/list_1/css";
 scss_files_in[5] = "website/new_edition/modules/m_article_1/scss/**/*.+(scss|sass)";
 css_files_out[5] = "website/new_edition/modules/m_article_1/css";
 
+scss_files_in[6] = "website/new_edition/modules/columns_1/scss/**/*.+(scss|sass)";
+css_files_out[6] = "website/new_edition/modules/columns_1/css";
+
 
 // Convert scss to css
 var sass_funct = function(scss_in, css_out) {
