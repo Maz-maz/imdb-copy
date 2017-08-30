@@ -1,5 +1,6 @@
 .columns_1 {
   height: 100px;
+  width: 100%;
 }
 
 .columns_1::after {
@@ -9,7 +10,7 @@
 }
 
 .columns_1__divider {
-  width: 10px;
+  width: 13px;
   height: 1px;
   float: left;
   background-color: red;
