@@ -7,11 +7,14 @@
   <!--!!! To watch what need to be done search for "!!!" in the comments-->
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>IMDb - Movies, TV and Celebrities - IMDb</title>
   <!--Below is for working of jQuery. !!!Maybe better to have a local copy-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="shortcut icon" href="modules/shelves/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="modules/shelves/css/shelves-layout.css">
+  <link rel="stylesheet" media="screen and (max-width: 599px)" type="text/css" href="modules/shelves/css/shelves-layout_mob.css"><!--Mobile-->
+  <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)" type="text/css" href="modules/shelves/css/shelves-layout_600-767.css"><!--Tablet-->
+  <link rel="stylesheet" media="screen and (min-width: 768px)" type="text/css" href="modules/shelves/css/shelves-layout_768.css"><!--Desktop-->
 
 <!--mod_css_text_1_b-->
 <link rel="stylesheet" type="text/css" href="modules/css_text_1/css/css_text_1.css">
@@ -144,6 +147,8 @@
           </header>
         </div>
     </div>
+
+    <div class="shelves__responsive_slide"><!--New-->
     <div id="flex_cont_main_pls_aside">
       <main class="css_link_1"><!--mod_css_link_1-->
         <!--!!! For test. Must be commented-->
@@ -276,6 +281,7 @@
 
       </aside>
     </div>
+    </div>
 
     <footer class="css_link_1"><!--mod_css_link_1-->
       <!--!!! For test. Must be commented-->
@@ -286,6 +292,9 @@
 
   </div>
 
+  <div class="shelves__css_applayed" style="position: fixed; top: -100px; width: 0px;"></div><!--New-->
+  <script src="modules/shelves/js/shelves.js"></script><!--New-->
+
 </body>
 </html>
-<!--shelves_e-->
+<!--mod_shelves_e-->

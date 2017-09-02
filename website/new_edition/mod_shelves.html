@@ -4,13 +4,16 @@
   <!--!!! To watch what need to be done search for "!!!" in the comments-->
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMDb - Movies, TV and Celebrities - IMDb</title>
   <!--Below is for working of jQuery. !!!Maybe better to have a local copy-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="shortcut icon" href="modules/shelves/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="modules/shelves/css/shelves-layout.css">
+  <link rel="stylesheet" media="screen and (max-width: 599px)" type="text/css" href="modules/shelves/css/shelves-layout_mob.css"><!--Mobile-->
+  <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)" type="text/css" href="modules/shelves/css/shelves-layout_600.css"><!--Tablet-->
+  <link rel="stylesheet" media="screen and (min-width: 768px)" type="text/css" href="modules/shelves/css/shelves-layout_768.css"><!--Desktop-->
 <!--mod_shelves_e-->
-  <link rel="stylesheet" type="text/css" href="modules/modules-test.css">
+<!--  <link rel="stylesheet" type="text/css" href="modules/modules-test.css">  -->
 <!--mod_shelves_b-->
   <!--Below is for supporting semantic elements for older browsers.
       Must be after stylesheets. To use read license !!!-->
@@ -35,11 +38,16 @@
         </div>
       </main>
 
+      <div class="shelves__aside_place"></div>
+
       <aside>
         <!--!!! For test. Must be commented-->
+        <p>Test</p>
+        <div class="shelves__aside_collaps">      
         <div class="modules_test_ins_1">
           <a href="#">Link test</a>
         </div>
+      </div>
       </aside>
     </div>
 
