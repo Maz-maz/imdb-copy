@@ -12,6 +12,11 @@ function classToNum(x) {
   return 1;
 };
 
+doWhenResize();
+
+window.addEventListener("resize", doWhenResize);
+
+function doWhenResize() {
 
 for(i = 0; i < columns_1.length; i++) {
   var columns_1_w = columns_1[i].getBoundingClientRect().width;
@@ -41,4 +46,6 @@ for(i = 0; i < columns_1.length; i++) {
     };
 
   };
+};
+
 };

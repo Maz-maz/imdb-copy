@@ -7,6 +7,12 @@ var aside = document.querySelector("aside");
 shelves__css_applayed.getBoundingClientRect().width === 1*/
 /*!!! Can be done better ?*/
 
+/*Popup when present first transition*/
+/*!!! Do better*/
+if(shelves__css_applayed.getBoundingClientRect().width === 1) {
+  window.alert("To scroll 'aside' just click on it. Return to 'main' also - just click on it.");
+};
+
 function shelves__responsive_slide_MvRight () {
   shelves__responsive_slide.setAttribute("style", "right: 0;");
 };

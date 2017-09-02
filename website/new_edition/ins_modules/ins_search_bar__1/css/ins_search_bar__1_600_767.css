@@ -1,0 +1,10 @@
+/*600_767 px*/
+.ins_search_bar__1 {
+  position: absolute;
+  left: 68px;
+  bottom: 46px;
+}
+
+.ins_search_bar__1 .search_bar__sch_field {
+  width: 300px;
+}

@@ -10,6 +10,8 @@
   margin: 0;
   padding: 0; /*second background image (below) to remove blinking*/
   background-image: url("../img/imdb_logo_unhover.png"), url("../img/imdb_logo_hover.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 101px;
   height: 49px;
 

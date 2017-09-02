@@ -2,3 +2,23 @@
   padding: 20px 21px 24px 20px;
   border-top: 1px solid #CCC;
 }
+
+.article_1__poster_1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../articles/article_1/poster_1_1_small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article_1__video_1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../articles/article_1/poster_video_1_1_small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,13 @@
+/*600-767 px*/
+.ins_logo__1 {
+  padding: 5px 9px;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 46px;
+}
+
+.ins_logo__1 .logo__link {
+  width: 50px;
+  height: 24.3px;
+}
